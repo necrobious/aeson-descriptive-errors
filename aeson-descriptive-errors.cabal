@@ -2,7 +2,7 @@
 -- further documentation, see http://haskell.org/cabal/users-guide/
 
 name:                aeson-descriptive-errors
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            A simple library for consistent error message formatting.
 -- description:         
 homepage:            https://github.com/necrobious/aeson-descriptive-errors
@@ -20,4 +20,6 @@ library
   exposed-modules:   Data.Aeson.Error.JsonError 
   build-depends:     base  >= 4.5,
                      aeson, 
-                     text  
+                     text,
+                     bytestring ,
+                     textual >= 0.1 
